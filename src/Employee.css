@@ -1,0 +1,53 @@
+.employee{
+    width: 1500px; 
+    height: 800px;   
+    overflow-x: hidden;
+    background: rgb(200, 200, 255);
+    /* flex-direction: column; */ 
+}
+
+.employee::-webkit-scrollbar{
+    display: none;
+}
+
+
+.fpanel{
+        display: flex;
+        border-radius: 20px;
+        padding: 20px;
+        width: 1465x; 
+        height: 700px;   
+}
+
+.panell{
+    width: 1280px;
+    padding: 20px;
+    border-radius: 0px 20px 20px 0px;
+    background-image: linear-gradient(to left,rgba(97, 122, 227, 0.4),rgba(234, 79, 207,0.4));
+    overflow: hidden;
+}
+
+.employeeList{
+    display: grid;
+    align-items: center;
+    padding: 10px 110px;
+    overflow-X: hidden;
+    overflow-y: scroll;
+    /* gap: 20px; */
+    width: 1110px;
+    height: 567px;
+    grid-gap: 25px;
+    grid-template-columns: repeat(6, 150px);}
+
+.employeeList::-webkit-scrollbar{
+    display: none;
+}
+
+
+.employeeList img{
+    width: 116px;
+}
+
+h4{
+    padding-top: 10px;
+}
