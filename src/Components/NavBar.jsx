@@ -1,27 +1,29 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
+import Employee from '../Employee';
+import {BrowserRouter, Route, Link} from 'react-router-dom'
+import Product from '../App'
+import Bill from '../Bill'
+import Inventory from '../Inventory';
 
 function NavBar(){
     return(
         <div class="navigationBar">
-            {/* <ul> */}
-                <div className="pnav">
-                    <div className="nav">
-                    <Link to="/"> Products </Link>
-                    </div>
-                    <div className="nav">
+                <nav className="pnav">
+                    <li className="nav">
+                    <Link to="/product"> Products </Link>
+                    </li>
+                    <li className="nav">
                     <Link to="/employee"> Employee </Link>
-                    </div>
-                    <div className="nav" >
+                    </li>
+                    <li className="nav" >
                     <Link to="/bills"> Bills </Link>
-                    </div>
-                    <div className="nav">
+                    </li>
+                    <li className="nav">
                     <Link to="/inventory"> Inventory </Link>
-                    </div>
-                </div>
-                {/* </ul> */}
+                    </li>
+            </nav>
             </div>
-    )
+    );
 }
 
 export default NavBar;

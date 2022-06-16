@@ -3,19 +3,19 @@ import Header1 from "./Components/Header1";
 import Profile from "./Components/Profile";
 import NavBar from "./Components/NavBar";
 
-import './Components/cssStyles/Bill.css'
+import './Components/cssStyles/BillDetailedView.css'
 
 
-function Bill(){
+function BillDetailedView(){
     return(
-        <div className="bill">
+        <div className="billDetailedView">
             <Header1 />
-            <div className="fullpanelBill">
-            <div className="profnavBill">
+            <div className="fullpanelBillDetailedView">
+            <div className="profnavfullpanelBillDetailedView">
                 <Profile />
                 <NavBar />
             </div>
-            <div className="panelBill">
+            <div className="panelBillDetailedView">
             
         </div>
         </div>
@@ -23,4 +23,4 @@ function Bill(){
     );
 }
 
-export default Bill;
+export default BillDetailedView;

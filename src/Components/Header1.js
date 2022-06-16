@@ -2,7 +2,7 @@ import React from "react";
 import epokaLogo from "./product/img/epokaLogo .png"
 import bereqetLogo from "./product/img/bereqetLogo.png"
 
-import '../App.css'
+// import './cssStyles/App.css'
 
 
 function Header1() {

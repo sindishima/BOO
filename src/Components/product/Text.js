@@ -1,22 +1,14 @@
 import React, { useState } from 'react'
-import '../../App.css'
+import '../cssStyles/App.css'
+import { useHistory } from "react-router-dom";
 
-
-function Text(){ 
-    const[line, setLine]=useState(false);
-
+function Text({name, isActive}){ 
     return (
-        <div className={`link ${line ? "active" : ""}`}
-        onClick={() => setLine(!setLine)}>
-        <ul>
-            <h3>Cafeteria</h3>
-                <a href="#" className="cofe">Chips </a>
-                <a href="#" className="cofe">Sweets </a>
-                <a href="#" className="cofe">Drinks </a>
-                <a href="#" className="cofe">Hots </a>
-        </ul>
-    </div>
+        <div className={`cofe ${isActive ? `active` : ``}`}>
+            <h4>{name}</h4>
+        </div>
     );
 };
+
 
 export default Text

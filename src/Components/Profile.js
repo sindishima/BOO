@@ -1,17 +1,20 @@
 import React from "react";
 import myProfilePhoto from "./product/img/myProfilePhoto.png";
+import EditCredentials from '../EditCredentials';
+import { Link , BrowserRouter, Route} from 'react-router-dom';
+import {useHistory} from 'react-router-dom'
+// import './cssStyles/App.css'
 
-import '../App.css'
 
+function Profile() {
 
-function Header1() {
     return (
             <div className="profile">
-                <div className="myImage"><img src={myProfilePhoto} alt="" className="epoka"/></div>
+                <img src={myProfilePhoto} alt="" className="myProfilePhoto"/>
                 <h3>Sindi Shima</h3>
-                <a href="#">Edit</a>
+                <Link to="/edit" className="editLink">Edit</Link>
             </div>
     );
 }
 
-export default Header1;
+export default Profile;

@@ -3,19 +3,19 @@ import Header1 from "./Components/Header1";
 import Profile from "./Components/Profile";
 import NavBar from "./Components/NavBar";
 
-import './Components/cssStyles/Bill.css'
+import './Components/cssStyles/Inventory.css'
 
 
-function Bill(){
+function Inventory(){
     return(
-        <div className="bill">
+        <div className="inventory">
             <Header1 />
-            <div className="fullpanelBill">
-            <div className="profnavBill">
+            <div className="fullpanelInventory">
+            <div className="profnavInventory">
                 <Profile />
                 <NavBar />
             </div>
-            <div className="panelBill">
+            <div className="panelInventory">
             
         </div>
         </div>
@@ -23,4 +23,4 @@ function Bill(){
     );
 }
 
-export default Bill;
+export default Inventory;
