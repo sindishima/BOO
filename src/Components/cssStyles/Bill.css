@@ -28,4 +28,63 @@
     border-radius: 20px 0px 0px 20px;
 }
 
+.fromToinputs{
+    margin-left: 130px;
+    text-align: center;
+    padding: 20px;
+    font-size: 15px;
+    padding-bottom: 50px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
 
+
+.fromInput{
+    border-radius: 10px;
+    width: 300px;
+    height: 30px;
+    margin-right: 200px;
+    outline: none;
+    border: none;
+}
+
+.toInput{
+    border-radius: 10px;
+    width: 300px;
+    height: 30px;
+    outline: none;
+    border: none;
+}
+
+.ag-theme-alpine{
+    width: 602px;
+    height: 475px;
+    margin-left: 310px;
+    background-color: rgb(135, 69, 153);
+    overflow-X: hidden; 
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.logoutButtonBills{
+    margin-left: 1180px;
+    margin-top: 20px;
+    border: none;
+    background-color: transparent;
+}
+
+.setDataBtn{
+    border: none;
+    background-color: #9F9DFF;
+    color: white;
+    font-size: 16px;
+    margin-left: 50px;
+    height: 40px;
+    border-radius: 20px;
+    width: 100px;
+
+}

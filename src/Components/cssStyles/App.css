@@ -1,6 +1,6 @@
 .App{
-    /* width: 1285px; */
-    /* height: 1080;  */
+    /* width: 1285px;  */
+    height: 1080; 
     overflow-x: hidden;
     background: #E0E6FF;
 }
@@ -106,8 +106,9 @@
 /*PROFILE*/
 .profile{
     height: 220px;
-    padding-left: 50px;
+    /* padding-left: 50px; */
     margin-top: 80px;
+    text-align: center;
 }
 
 .myProfilePhoto{
@@ -117,9 +118,6 @@
     background: rgb(12, 35, 80, 0.3);
 }
 
-.editLink{
-    margin-left: 34px;
-}
 
 
 
@@ -132,7 +130,8 @@
     padding-right: 30px;
 }
 
-.cofe:hover, .cofe:active{
+.cofe:hover, 
+.cofe:active{
     /* transform: translateY(-20px); */
     text-decoration: underline;
     color: darkblue;
@@ -145,12 +144,12 @@
     padding-right: 30px;
 }
 
-.cofe1:hover, .cofe1:active{
+.cofe1:hover, 
+.cofe1:active{
     /* transform: translateY(-20px); */
     text-decoration: underline;
     color: darkblue;
 }
-
 
 
 
@@ -175,15 +174,6 @@
     height: 30px;
 }
 
-.buttonPopupProduct{
-    border: none;
-    margin-top: 20px;
-    width: 126px;
-    height: 30px;
-    display: flex;
-    background-color: transparent;
-}
-
 .productItemListCafeteria{
     display: flex;
     padding: 10px 0px;
@@ -192,6 +182,8 @@
     overflow-y: hidden;
     gap: 20px;
     margin-top: -223px;
+    /* background-color: red; */
+    height: 235px;
 }
 
 .productListCantina{
@@ -215,7 +207,33 @@
     /* margin-top: 22px; */
 }
 
+
+
 .buttonPopupProduct1{
+    border: none;
+    margin-top: 20px;
+    width: 126px;
+    height: 30px;
+    display: flex;
+    background-color: transparent;
+}
+
+.confirmPopup1{
+    margin-top: 20px;
+    border: none;
+    background-color: rgb(243, 94, 183);
+    border-radius: 15px;
+    height: 30px;
+    width: 100px;
+}
+
+.confirmPopupText1{
+    color: white;
+    margin-top: 7px;
+}
+
+
+.buttonPopupProduct{
     border: none;
     margin-top: 20px;
     width: 126px;
@@ -281,9 +299,19 @@
     font-size: 16;
 }
 
-/* .product:hover{
-    transform: translateY(-20px); 
-} */
+.imagePrd{
+    width: 110px;
+    height: 70px;
+    /* background-color: red; */
+    display: flex;
+    margin-top: 30px;
+    margin-left: -3px ;
+}
+
+.productsImages{
+    width: 98%;
+    /* margin-top: -3px; */
+}
 
 .product::-webkit-scrollbar{
     display: none;
@@ -307,11 +335,6 @@
     font-style: normal;
 }
 
-.productsImages{
-    width: 98%;
-    margin-left: 5px;
-    margin-top: -3px;
-}
 
 
 
@@ -320,7 +343,7 @@
 .panel{
     padding: 20px;
     border-radius: 0px 20px 20px 0px;
-    background-image: linear-gradient(to left,rgb(97, 122, 227, 0.4),rgb(234, 79, 207, 0.4));
+    background-image: linear-gradient(to left,rgb(97, 122, 227, 0.3),rgb(234, 79, 207, 0.4));
     overflow: hidden;
     width: 1230px;
 }
@@ -329,4 +352,5 @@
     display: flex;
     border-radius: 20px;
     padding: 20px;
+    height: 760px;
 }

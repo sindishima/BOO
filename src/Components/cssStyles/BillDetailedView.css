@@ -15,6 +15,11 @@
         height: 700px;   
 }
 
+.profnavfullpanelBillDetailedView{
+    background-color:  rgb(205, 159, 248);
+    border-radius: 20px 0px 0px 20px;
+}
+
 .panelBillDetailedView{
     width: 1280px;
     padding: 20px;
@@ -23,9 +28,96 @@
     background-image: linear-gradient(to left,rgb(97, 122, 227, 0.4),rgb(234, 79, 207, 0.4));
 }
 
-.profnavfullpanelBillDetailedView{
-    background-color:  rgb(205, 159, 248);
-    border-radius: 20px 0px 0px 20px;
+.billView{
+    margin-top: -420px;
+    background-color: #FEF9FF;
+    text-align: center;
+    height: 543px;
+    width: 423px;
+    margin-left: 350px;
+    margin-right: 400px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.time{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 15px; 
+    height: 60px;
+}
+
+.nameAmountPrice{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 15px; 
+    height: 60px;
+}
+
+.linee{
+    height: 1px;
+    width: 420px;
+    margin-top: -13px;
+    background-color: black;
+}
+
+.cancleBill{
+    margin-left: 950px;
+    margin-top: 150px;
+    height: 40px;
+    width: 230px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: #FF9DBB;
+    font-size: 16px;
 }
 
 
+.printPreview{
+    font-size: 16px;
+    margin-left: 950px;
+    margin-top: 200px;
+    height: 40px;
+    width: 230px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: #9391F2;
+}
+
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 15px; 
+    height: 60px;
+}
+
+.goBackIconImage12{
+    height: 40px;
+}
+
+.logoutbtn7{
+    border: none;
+    background-color: transparent;
+}
+
+.productsAll{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 15px; 
+    height: 60px;
+}
+
+.hideButton{
+    background-color: transparent;
+    border: none;
+    width: 20px;
+    height: 20px;
+}

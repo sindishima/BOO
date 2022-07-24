@@ -17,7 +17,9 @@
 
 .panelInventory{
     width: 1280px;
-    padding: 20px;
+    /* padding-left: 20px;
+    padding-right: 20px; */
+    padding-bottom: 20px;
     border-radius: 0px 20px 20px 0px;
     overflow: hidden;
     background-image: linear-gradient(to left,rgb(97, 122, 227, 0.4),rgb(234, 79, 207, 0.4));
@@ -28,4 +30,72 @@
     border-radius: 20px 0px 0px 20px;
 }
 
+.cafeteriaButtonInventory{
+    width: 750px;
+    height: 60px;
+    border: none;
+    font-size: 20px ;
+    background-color: #A59DFF;
+    color: white;
+}
 
+.cantinaButtonInventory{
+    width: 750px;
+    height: 60px;
+    border: none;
+    font-size: 20px ;
+    background-color: #A59DFF;
+    color: white;
+}
+
+.buttonsInventory{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.cantinaButtonInventory:hover {
+    /* transform: translateY(-10px); */
+    background: rgb(221, 162, 246);
+}
+
+.cafeteriaButtonInventory:hover {
+    background: rgb(221, 162, 246);
+}
+
+.fromToinputs1{
+    text-align: center;
+    padding: 20px;
+    font-size: 15px;
+    padding-bottom: 50px;
+    margin-top: 10px;
+}
+
+.fromInput1{
+    border-radius: 10px;
+    width: 300px;
+    height: 30px;
+    margin-right: 200px;
+    outline: none;
+    border: none;
+}
+
+.toInput1{
+    border-radius: 10px;
+    width: 300px;
+    height: 30px;
+    outline: none;
+    border: none;
+}
+
+.panelInventory .ag-theme-alpine{
+    width: 800px;
+    height: 410px;
+    margin-left: 230px;
+    background-color: rgb(135, 69, 153);
+    overflow-X: hidden; 
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}

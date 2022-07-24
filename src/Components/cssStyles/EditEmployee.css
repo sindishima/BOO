@@ -48,13 +48,12 @@
 
 
 /*SMALL PANEL ELEMENTS*/
-.employeeImg{
+/* .employeeImg{
     width: 200px;
     margin-left: 110px;
     margin-top: 40px;
     margin-left: 70px;
     padding-bottom: 10px;
-    /* background-color: white; */
     width: 177px;
     border-radius: 20px;
 }
@@ -62,6 +61,37 @@
 .updatePhoto{
     margin-left: 175px;
     color: #409F4F;
+} */
+
+.employeeImg12{
+    margin-left: 127px;
+    background-color: white;
+    width: 177px;
+    height: 177px;
+    margin-top: -100px;
+    padding-bottom: 20px;
+    margin-bottom: 5px;
+    border-radius: 20px;
+    filter: drop-shadow(0px 2px 1px rgb(161, 159, 159));
+}
+
+.uploadImageText12{
+    display: none;
+}
+
+.addimageFile12{
+    margin-left: 180px;
+    color: #2d853a;
+    font-size: 19px;
+}
+
+.innerImageEmpl12{
+    /* background-color: red; */
+    border-radius: 20px;
+    height: 80px;
+    width: 300px;
+    margin-top: -170px;
+    padding-bottom:130px;
 }
 
 .goBackIconImage4{

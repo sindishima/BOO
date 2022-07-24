@@ -15,14 +15,14 @@
         border-radius: 20px;
         padding: 20px;
         width: 1465x; 
-        height: 700px;   
+        height: 700px;  
 }
 
 .panell{
+    overflow: hidden;
     width: 1280px;
     padding: 20px;
     border-radius: 0px 20px 20px 0px;
-    overflow: hidden;
     background-image: linear-gradient(to left,rgb(97, 122, 227, 0.4),rgb(234, 79, 207, 0.4));
 }
 
@@ -66,6 +66,14 @@
     width: 120px;
     margin-top: 4px;
 }
+
+.imageEmplo{
+    height: 160px;
+    width: 145px;
+    display: flex;
+    margin-left: 15px ;
+}
+
 
 
 
@@ -157,7 +165,7 @@
 
 
 /*PROFILE*/
-.profile{
+/* .profile{
     height: 220px;
     padding-left: 50px;
     margin-top: 80px;
@@ -172,7 +180,7 @@
 
 .editLink{
     margin-left: 34px;
-}
+} */
 
 
 

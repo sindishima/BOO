@@ -10,11 +10,15 @@ import addIcon from './Components/emloyee/AddIcon.png'
 import { useState } from "react";
 import {SearchRounded} from "@mui/icons-material"
 import {Logout} from "@mui/icons-material"
+import { useEffect } from "react";
+import {useHistory} from 'react-router-dom'
+import axios from "axios";
 
 import './Components/cssStyles/Employee.css'
 
 
 function Employee(){
+    const history = useHistory();
 
     const [searchInput, setSearchInput]=useState('');
     const [filteredResults, setFilteredResults] = useState([]);
@@ -22,7 +26,7 @@ function Employee(){
     const searchItems = (searchValue) => {
         setSearchInput(searchValue)
         if (searchInput !== '') {
-            const filteredData = EmployeeList.filter((item) => {
+            const filteredData = employeeList.filter((item) => {
                 return Object.values(item).join('').toLowerCase().includes(searchInput.toLowerCase())
             })
             setFilteredResults(filteredData)
@@ -30,9 +34,49 @@ function Employee(){
             console.log(searchInput.length);
         }
         else{
-            setFilteredResults(EmployeeList);
+            setFilteredResults(employeeList);
         }
     }
+
+
+    const [employeeList, setEmployeeList]=useState([])
+    const [l, setL]=useState(false);
+    
+    useEffect(()=>{
+        if(l===false){ 
+            axios.get("http://localhost:8080/seller").then(r=>{
+                console.log("Products cafeteria",r.data)
+                setEmployeeList(r.data)
+                setL(true)
+            })
+            .catch(err => {
+                console.log(err);
+            })
+        }
+    },[employeeList, l]);
+
+
+    // const [employee, setEmployee]=useState([]);
+
+    // useEffect(() => {
+    //     const activeEmployee = document.querySelector(".employeeList").querySelectorAll(".empl");
+
+    //     function setEmployeeActive() {
+    //         activeEmployee.forEach((n) => n.classList.remove("active"));
+    //         this.classList.add("active");
+    //         console.log(activeEmployee);
+    //     }
+
+    //     activeEmployee.forEach((n) => n.addEventListener("click", setEmployeeActive));
+    // },[employee]);
+        
+
+    // const setData = () =>{
+    //         axios.get("http://localhost:8080/seller").then(r=>{
+    //         console.log("initial",r.data)
+    //         setEmployee(r.data)
+    // })
+    // }
 
     return(
         <div className="employee">
@@ -49,27 +93,30 @@ function Employee(){
                     <SearchRounded />
                     <div><input type="text" value={searchInput} placeholder="               Search" className="search" onChange={(e) => searchItems(e.target.value)}/></div>
                 </div>
-                <button className="logoutbtn" ><Logout /></button>
+                <button className="logoutbtn" onClick={() => history.push('/login')}><Logout /></button>
             </header>
 
-            <div className="employeeList">
+            <div className="employeeList" >
                 {searchInput.length > 0 ? (
                     filteredResults.map(data => ( 
-                            <div key={data.id} >
+                            <div key={data.id}>
+                                 {/* onClick={()=>setData(data.id)}> */}
                             <Employees
-                                name={data.name}
-                                img={data.image}
+                                id={data.id}
+                                username={data.username}
+                                image={data.image}
                                 color={data.color}
                             />
                             </div>
                         ))
                 ) : (
-                EmployeeList.map(data => ( 
-                    <div key={data.id}>
+                employeeList.map(data => ( 
+                    <div key={data.id} >
                         <Employees
-                            name={data.name}
-                            img={data.image}
-                            color={data.color}
+                            id={data.id}
+                            username={data.username}
+                            password={data.password}
+                            image={data.image}
                         />
                     </div>
                     ))

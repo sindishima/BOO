@@ -2,7 +2,6 @@ import React from "react";
 import {SearchRounded} from "@mui/icons-material"
 import {Logout} from "@mui/icons-material"
 import {useHistory} from 'react-router-dom'
-import Employee from "../Employee";
 import { useState } from "react";
 import EmployeeList from "./emloyee/EmployeeList";
 

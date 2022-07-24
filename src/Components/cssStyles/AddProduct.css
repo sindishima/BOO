@@ -37,7 +37,7 @@
 
 .bottomPanell1{
     background: linear-gradient(#facef6, #d1cdfd);
-    margin-top: 30px;
+    margin-top: 20px;
     height: 330px;
     border-radius: 20px;
     padding: 20px 30px;
@@ -47,13 +47,44 @@
 
 
 /*SMALL PANEL ELEMENTS*/
+.productImage1{
+    margin-left: 127px;
+    background-color: white;
+    width: 177px;
+    height: 157px;
+    margin-top: -100px;
+    padding-bottom: 20px;
+    margin-bottom: 5px;
+    border-radius: 20px;
+    filter: drop-shadow(0px 2px 1px rgb(161, 159, 159));
+}
+
+/* .uploadImageText1{
+    display: none;
+} */
+
+.addimageFile1{
+    margin-left: 180px;
+    color: #2d853a;
+    font-size: 19px;
+}
+
+.innerImageProduct{
+    /* background-color: red; */
+    border-radius: 20px;
+    height: 80px;
+    width: 300px;
+    margin-top: -170px;
+    padding-bottom:130px;
+}
+
 .goBackIconImage1{
     width: 40px;
     margin-left: 17px;
     padding-bottom: 165px;
 }
 
-.blankImage{
+/* .blankImage{
     width: 177px;
     height: 177px;
     margin-left: 115px;
@@ -61,15 +92,14 @@
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
     filter: drop-shadow(0px 2px 1px rgb(161, 159, 159));
-}
+} */
 
-.updatePhotoLink1{
-    /* background: red; */
+/* .updatePhotoLink1{
     margin-left: 169px;
     color: #409F4F;
-}
+} */
 
-.name111, .amount111, .price111{
+.name111, .amount111, .price111, .categoryId111{
     border-radius: 10px;
     height: 27px;
     width: 80px;
@@ -78,12 +108,20 @@
     filter: drop-shadow(0px 2px 1px rgb(161, 159, 159));
 }
 
-.description11{
-    margin-top: 20px;
+.categoryId111{
+    border-radius: 10px;
+    height: 27px;
+    width: 120px;
+    border: none;
+    outline: none;
+    filter: drop-shadow(0px 2px 1px rgb(161, 159, 159));
+}
+
+.description11, .categoryId11, .price11{
+    margin-top: 10px;
 }
 
 .amount11{
-    /* background-color: blue; */
     margin-left: 288px;
     margin-top: -50px;
 }
@@ -102,14 +140,14 @@
     font-size: 16px;
 }
 
-.buttonn1{
-    display: flex;
+.buttonn6{
+    text-align: center;
     gap: 30px;
     height:150px;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
-.red1{
+/* .red1{
     background: #FF9DBB;
     border-radius: 20px;
     height: 35px;
@@ -118,10 +156,10 @@
     font-size: 16px;
     color: white;
     border: none;
-}
+} */
 
 .blue1{
-    background: #9F9DFF;
+    background: #45ad5a;
     border-radius: 20px;
     height: 35px;
     width: 172px;
